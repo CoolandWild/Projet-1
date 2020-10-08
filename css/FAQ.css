@@ -1,9 +1,8 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-
 /*Header*/
 .topnav {
     display: grid;
@@ -85,7 +84,7 @@
     background-color: #202020;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
  
 .tablink {
@@ -122,7 +121,7 @@
 /*Fin du menu latéral*/
 
 /*Main*/
-#main {
+#main-faq {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +132,7 @@
     min-height: 100%;
 }
 
-.push {
+.push-faq {
     height: 10vh;
     margin-bottom: -10VW;
 }
@@ -271,7 +270,7 @@
 /*Fin de la div FAQ*/
 
 /*Footer*/
-.footer {
+.footer-faq {
     background-color: #424242;
     height: 10vh;
     width: 100vw;
@@ -285,12 +284,12 @@
     transition: margin-left .5s;
 }
 
-.footer div{
+.footer-faq div{
     display: table-cell;
     vertical-align: middle;
 }
 
-.footer p{
+.footer-faq p{
     height: 10vh;
     display: table-cell;
     vertical-align: middle;
