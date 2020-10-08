@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+        <nav class="topnav">
+            <a class="menubtn" href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+            <div class="site-title">
+                <a href="/html/index.html"><h1>EcoPhone.fr</h1></a>
+            </div>
+            <div class="cart">
+                <a href="/html/cart.html"><i class="fas fa-shopping-cart" width="30" height="30"></i></a>
+            </div>
+        </nav>
+
+        <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../html/mobile.html" class="tablink" id="mobile" onmouseover="openCat('mobile', this, '#33BAFF')"><i class="fas fa-mobile"></i> Téléphones</a>
+            <a href="../html/tablet.html" class="tablink" id="tablet" onmouseover="openCat('tablet', this, '#4AFF33')"><i class="fas fa-tablet"></i> Tablettes</a>
+            <a href="../html/laptop.html" class="tablink" id="laptop" onmouseover="openCat('laptop', this, '#F6FF33')"><i class="fas fa-laptop"></i> Ordinateurs</a>
+            <a href="../html/contact.html" class="tablink" id="contact" onmouseover="openCat('contact', this, '#FF33F5')"><i class="fas fa-envelope"></i> Contacts</a>
+            <a href="../html/faq.html" class="tablink" id="faq" onmouseover="openCat('faq', this, '#FFA333')"><i class="far fa-question-circle"></i> FAQ</a>
+        </div>
+
+        <div id="main">
+        </div>
+
+        <footer class="footer">
+            <div class=""><p>Salut</p></div>
+            <div class=""><p>Salut 2</p></div>
+        </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("sideNavigation").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("sideNavigation").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+            function openCat(catName, elmnt, color) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+
+                document.getElementById(catName).style.display = "block";
+
+                elmnt.style.backgroundColor = color;
+            }
+            
+            </script>
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+
+            <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyB8FiBQ_Gh7cZNb5F4wODmEgTH62KglAPc",
+                authDomain: "ecophonewcs.firebaseapp.com",
+                databaseURL: "https://ecophonewcs.firebaseio.com",
+                projectId: "ecophonewcs",
+                storageBucket: "ecophonewcs.appspot.com",
+                messagingSenderId: "302759821629",
+                appId: "1:302759821629:web:9788a601a3d628a0b10554",
+                measurementId: "G-ZYZ6V4XCBM"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+    </body>
+</html>
