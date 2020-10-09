@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Frequently Asked Questions</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/FAQ.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
@@ -38,10 +39,10 @@
                 </div>
             </div>
 
-            <div id="main-faq">
+            <div id="main">
                 <section class="section-faq">
                     <h1 id="faq-title">Foire Aux Questions<h1>
-                    <p id="faq-text">Vous pouvez retrouver ici toutes les questions les plus fréquemment posées, n'hésitez pas à nous contacter pour nous poser toute autre question</p>
+                    <p class="faq-text">Vous pouvez retrouver ici toutes les questions les plus fréquemment posées, n'hésitez pas à nous contacter pour nous poser toute autre question</p>
                 </section>
                 <section class="divFaq">
                     <h1 class="question"> Que faire en cas de panne ou de casse de mon mobile ? <a href="" id="upFaq"><i class="fas fa-caret-up"></i></a><a href="" id="downFaq"><i class="fas fa-caret-down"></i></a></h1>
@@ -83,12 +84,12 @@
                     <h2 class="reponseQues" id="reponse5">Dans toutes nos ventes nous incluons la garantie "VOL" et "Casse accidentelle" du téléphone , voir les conditions de garantie fournies dans le colis du téléphone .</h2>
                     <hr class="ligne last-line">
                 </section>
-                <section class="push-faq">
+                <section class="push">
                 </section>
             </div>
         </div>
 
-            <footer class="footer-faq">
+            <footer id="footer" class="footer1">
                 <div class=""><p>Salut</p></div>
                 <div class=""><p>Salut 2</p></div>
             </footer>
@@ -97,6 +98,7 @@
             function openNav() {
                 document.getElementById("sideNavigation").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("main").style.width = "auto";
                 document.getElementById("footer").style.marginLeft = "250px";
             }
 
