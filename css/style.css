@@ -163,12 +163,12 @@
     transition: margin-left 1s ease-in-out;
 }
 
-.footer div{
+footer div{
     display: table-cell;
     vertical-align: middle;
 }
 
-.footer p{
+footer p{
     height: 10vh;
     display: table-cell;
     vertical-align: middle;
