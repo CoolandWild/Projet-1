@@ -249,7 +249,7 @@ padding: 2%;
 }
 
 .promoCode label {
-//display: block;
+display: block;
 width: 100%;
 font-style: italic;
 font-size: 1.15em;
