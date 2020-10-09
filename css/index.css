@@ -1,0 +1,19 @@
+/*Page centrale*/
+#main-flex {
+    transition: margin-left 0.5s ease-in-out;
+    background:#d7d7d7;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone-image {
+    height: 80vh;
+    align-items: flex-start;
+}
+
+.huawei-image {
+    height: 80vh;
+    float: right;
+}
+/*Fin de la page centrale*/

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
@@ -70,7 +71,7 @@
               </section>
         </div>
 
-        <footer class="footer">
+        <footer id="footer" class="footer1">
             <div class=""><p>Salut</p></div>
             <div class=""><p>Salut 2</p></div>
         </footer>
@@ -79,11 +80,13 @@
             function openNav() {
                 document.getElementById("sideNavigation").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("footer").style.marginLeft = "250px";
             }
             
             function closeNav() {
                 document.getElementById("sideNavigation").style.width = "0";
                 document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("footer").style.marginLeft = "0";
             }
 
             function openCat(catName, elmnt, color) {
@@ -103,7 +106,6 @@
 
                 elmnt.style.backgroundColor = color;
             }
-            
             </script>
 
             <!-- The core Firebase JS SDK is always required and must be listed first -->
