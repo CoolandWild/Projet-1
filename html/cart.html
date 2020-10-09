@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/cart.css">
+        <link rel="stylesheet" href="../css/style-cart.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
@@ -37,9 +37,108 @@
         </div>
 
         <div id="main">
-            
-        </div>
-
+            <div class="wrap cf">
+                <h1 class="projTitle"><span>EcoPhone</span> Shopping Cart</h1>
+                <div class="heading cf">
+                  <h1>Mon Panier</h1>
+                  <a href="#" class="continue">Continue Shopping</a>
+                </div>
+                <div class="cart">
+             
+                  <ul class="cartWrap">
+                    <li class="items odd">
+                      
+                  <div class="infoWrap"> 
+                      <div class="cartSection">
+                      <img src="../img/iphone11-red-select-2019_GEO_EMEA.png" alt="iphone 11 red" class="itemImg" />
+                        <p class="itemNumber">#QUE-007544-003</p>
+                        <h3>Apple Iphone 11 red 256 GB</h3>
+                      
+                         <p> <input type="text"  class="qty" placeholder="1"/> x $1149.00</p>
+                      
+                        <p class="stockStatus"> In Stock</p>
+                      </div>  
+                  
+                      
+                      <div class="prodTotal cartSection">
+                        <p>$1149.00</p>
+                      </div>
+                            <div class="cartSection removeWrap">
+                         <a href="#" class="remove">x</a>
+                      </div>
+                    </div>
+                    </li>
+                    <li class="items even">
+                      
+                     <div class="infoWrap"> 
+                      <div class="cartSection">
+                       
+                      <img src="../img/iphone11-white-select-2019_GEO_EMEA.png" alt="Iphone 11 White" class="itemImg" />
+                        <p class="itemNumber">#QUE-007544-001</p>
+                        <h3>Apple Iphone 11 White 128 GB</h3>
+                      
+                         <p> <input type="text"  class="qty" placeholder="2"/> x $1049.00</p>
+                      
+                        <p class="stockStatus"> In Stock</p>
+                      </div>  
+                  
+                      
+                      <div class="prodTotal cartSection">
+                        <p>$2098.00</p>
+                      </div>
+                            <div class="cartSection removeWrap">
+                         <a href="#" class="remove">x</a>
+                      </div>
+                    </div>
+                    </li>
+                    
+                          <li class="items odd">
+                           <div class="infoWrap"> 
+                      <div class="cartSection">
+                          
+                      <img src="../img/Smartphone-Huawei-P40-Pro-5G-Double-SIM-256-Go-Noir.png" alt="Huawei p40" class="itemImg" />
+                        <p class="itemNumber">#QUE-007544-002</p>
+                        <h3>Huawei P40 pro 128GB</h3>
+                      
+                         <p> <input type="text"  class="qty" placeholder="1"/> x $899.00</p>
+                      
+                        <p class="stockStatus out"> Out of Stock</p>
+                      </div>  
+                  
+                      
+                      <div class="prodTotal cartSection">
+                        <p>$899.00</p>
+                      </div>
+                                  <div class="cartSection removeWrap">
+                         <a href="#" class="remove">x</a>
+                      </div>
+                            </div>
+                    </li>
+                    
+                    
+                    
+                    <!--<li class="items even">Item 2</li>-->
+               
+                  </ul>
+                </div>
+                
+                <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+                <a href="#" class="btn"></a></div>
+                
+                <div class="subtotal cf">
+                  <ul>
+                    <li class="totalRow"><span class="label">Subtotal</span><span class="value">$4146.00</span></li>
+                    
+                        <li class="totalRow"><span class="label">Shipping</span><span class="value">$0.00</span></li>
+                    
+                          <li class="totalRow"><span class="label">Tax</span><span class="value">$228.00</span></li>
+                          <li class="totalRow final"><span class="label">Total</span><span class="value">$4374.00</span></li>
+                    <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>    
+        
         <footer class="footer">
             <div class=""><p>Salut</p></div>
             <div class=""><p>Salut 2</p></div>
@@ -101,5 +200,6 @@
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
         </script>
+        <script src="Javascript/cart.js"></script>
     </body>
 </html>
