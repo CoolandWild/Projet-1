@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
+/*Main*/
+#main {
+    transition: margin-left 0.5s ease-in-out;
+    min-height: 80vh;
+}
+
 /*Header*/
 .topnav {
     display: grid;
@@ -121,59 +128,33 @@
 }
 /*Fin du menu latéral*/
 
-/*Page centrale*/
-#main-grid {
-    transition: margin-left;
-    transition-delay: 1s ease-in-out;;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background:#d7d7d7;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(2, 40vh);
-}
-
-#main-grid .iphone-image {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 50vw;
-}
-
-#main-grid .mac-image {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: 50vw;
-}
-/*Fin de la page centrale*/
-
 /*Footer*/
-.footer {
+.footer1 {
     background-color: #424242;
     height: 10vh;
     position: relative;
+    width: auto;
     bottom: 0;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    transition: margin-left 1s ease-in-out;
+    transition: margin-left 0.5s ease-in-out;
 }
 
 footer div{
     display: table-cell;
     vertical-align: middle;
+    /* width: auto; */
 }
 
 footer p{
     height: 10vh;
     display: table-cell;
     vertical-align: middle;
+    /* width: auto; */
 }
+<<<<<<< HEAD
 /*Fin du footer*/
 
 /*Formulaire de contact*/
@@ -834,3 +815,6 @@ transition-delay: 0.75s;
         padding-left: 25px;
    }
 }
+=======
+/*Fin du footer*/
+>>>>>>> 2ed5841a2668654fb907d2ed421b9c5fadfb9585
